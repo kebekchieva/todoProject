@@ -1,0 +1,147 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    
+    <link rel="stylesheet" href="{% static 'styles/index2.css' %}" />
+    <link rel="stylesheet" href="{% static 'styles/checkbox.css' %}"/>
+</head>
+<body>
+    <section>
+
+        <div class="create_container">
+            <input
+            class="create_input"
+            type="text"
+            placeholder="Enter a country to visit"
+            />
+            <button class="create_button">Add</button>
+        </div>
+
+    <div class="todo_container">
+
+        <div class="todo_item">
+            <div class="todo_item_header">
+                <label class="checkbox_container">
+                    <input type="checkbox"/>
+                    <span class="checkmark"></span>
+                </label>
+                <h4>USA</h4>
+            </div>
+            <div class="todo_item_footer">
+                <p>00.00.2021 <span>17:21</span></p>
+                <div class="action_buttons">
+                    <img src="./icon/unmarked.png"/>
+                    <img src="./icon/delete.png"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="todo_item marked">
+            <div class="todo_item_header">
+                <label class="checkbox_container">
+                    <input type="checkbox"/>
+                    <span class="checkmark"></span>
+                </label>
+                <h4>I was in Israel</h4>
+            </div>
+            <div class="todo_item_footer">
+                <p>17.11.2019 <span>17:21</span></p>
+                <div class="action_buttons">
+                    <img src="./icon/unmarked.png"/>
+                    <img src="./icon/delete.png"/>
+                </div>
+            </div>
+        </div>
+        
+        <div class="todo_item done">
+            <div class="todo_item_header">
+                <label class="checkbox_container">
+                    <input type="checkbox"/>
+                    <span class="checkmark"></span>
+                </label>
+                <h4>Could not go to Russia</h4>
+            </div>
+            <div class="todo_item_footer">
+                <p>17.11.2021 <span>17:21</span></p>
+                <div class="action_buttons">
+                    <img src="./icon/unmarked.png"/>
+                    <img src="./icon/delete.png"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="todo_item marked">
+            <div class="todo_item_header">
+                <label class="checkbox_container">
+                    <input type="checkbox"/>
+                    <span class="checkmark"></span>
+                </label>
+                <h4>I was in Malaysia</h4>
+            </div>
+            <div class="todo_item_footer">
+                <p>17.11.2017 <span>17:21</span></p>
+                <div class="action_buttons">
+                    <img src="./icon/unmarked.png"/>
+                    <img src="./icon/delete.png"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="todo_item">
+            <div class="todo_item_header">
+                <label class="checkbox_container">
+                    <input type="checkbox"/>
+                    <span class="checkmark"></span>
+                </label>
+                <h4>Morocco</h4>
+            </div>
+            <div class="todo_item_footer">
+                <p>00.00.2021 <span>17:21</span></p>
+                <div class="action_buttons">
+                    <img src="./icon/unmarked.png"/>
+                    <img src="./icon/delete.png"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="todo_item done">
+            <div class="todo_item_header">
+                <label class="checkbox_container">
+                    <input type="checkbox"/>
+                    <span class="checkmark"></span>
+                </label>
+                <h4>Could not go to KZ</h4>
+            </div>
+            <div class="todo_item_footer">
+                <p>17.11.2021 <span>17:21</span></p>
+                <div class="action_buttons">
+                    <img src="./icon/unmarked.png"/>
+                    <img src="./icon/delete.png"/>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    </section>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
