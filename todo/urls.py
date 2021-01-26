@@ -23,7 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("", homepage, name="homepage"),
     path("test/", test, name="test"),
-    path("add-too/", add_todo, name="add-todo"),
+    path("add-todo/", add_todo, name="add-todo"),
     path("delete-todo/<id>/", delete_todo, name="delete-todo"),
     path("mark-todo/<id>/", mark_todo, name="mark-todo"),
     path("closed-todo/<id>/", close_todo, name="close-todo"),
